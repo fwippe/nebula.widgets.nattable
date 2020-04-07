@@ -182,8 +182,8 @@ public class DateCellEditor extends AbstractCellEditor {
         parent.getDisplay().asyncExec(new Runnable() {
             @Override
             public void run() {
-                if (! this.dateTime.isDisposed()) {
-                    this.dateTime.forceFocus();
+                if (! DateCellEditor.this.dateTime.isDisposed()) {
+                    DateCellEditor.this.dateTime.forceFocus();
                 }
             }
         });
